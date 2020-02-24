@@ -2,11 +2,36 @@
   box-sizing: border-box;
 }
 
+.content {
+  height: 100%;
+  background-image: url(field.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
-  background-color: aqua;
+  color: white;
+  border: 1px solid black;
+}
+
+.navbar-logo {
+  margin-right: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.navbar-links {
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0px;
 }
 
 ul {
@@ -17,8 +42,17 @@ ul {
 
 li {
   display: inline-block;
-  padding: 10px 10px;
+  padding: 15px 40px;
 }
+
+/*
+
+
+RWD
+
+
+
+*/
 
 .row::after {
   content: "";
