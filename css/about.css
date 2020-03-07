@@ -1,0 +1,11 @@
+.about-image {
+  height: 200px;
+  width: auto;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

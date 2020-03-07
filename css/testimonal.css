@@ -2,9 +2,24 @@
   background-color: white;
 }
 
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
 .testimonial-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+
+.testimonial-image {
+  margin: 10px;
+}
+
+.testimonial-text {
+  width: 40vw;
 }

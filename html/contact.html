@@ -9,8 +9,11 @@
   <body>
     <div class="header-main">
       <header>
-        <nav>
-          <ul class="navbar">
+        <nav class="navbar">
+          <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger" />
+          <ul>
+            <li><img class="navbar-logo" src="../images/logo.png" /></li>
             <li><a class="navbar-link" href="./index.html">Home</a></li>
             <li><a class="navbar-link" href="./about.html">About</a></li>
             <li><a class="navbar-link" href="./products.html">Products</a></li>
@@ -22,8 +25,16 @@
         </nav>
       </header>
       <div class="content">
-        <main class="row contact-main">
-          <div class="main-row"></div>
+        <main>
+          <div class="main-row">
+            <h1>Contact Us:</h1>
+            <form id="contact-form">
+              <input id="fname" type="text" placeholder="First Name" />
+              <input id="lname" type="text" placeholder="Last Name" />
+              <input id="email" type="text" placeholder="Email" />
+              <textarea cols="50" rows="10"> </textarea>
+            </form>
+          </div>
         </main>
       </div>
     </div>
