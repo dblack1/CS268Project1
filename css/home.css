@@ -8,3 +8,15 @@
 .header-main {
   height: 100vh;
 }
+
+.navbar {
+  background-color: white;
+}
+
+.navbar-link {
+  color: #3c9674;
+}
+
+footer {
+  background-color: white;
+}

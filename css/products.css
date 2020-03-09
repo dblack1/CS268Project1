@@ -22,4 +22,15 @@
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 13px -4px #000000;
+  box-shadow: 0px 4px 13px -4px #000000;
+  padding-top: 10px;
+}
+
+main {
+  padding-top: 10px;
+  background-color: lightgray;
 }
