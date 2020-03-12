@@ -44,7 +44,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-family: "Noto Sans", sans-serif;
   background-color: #3c9674;
 }
@@ -152,6 +152,10 @@ nav label,
 
   nav input:checked ~ ul {
     display: block;
+  }
+
+  .navbar-logo {
+    display: none;
   }
 }
 

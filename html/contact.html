@@ -12,15 +12,25 @@
         <nav class="navbar">
           <label for="hamburger">&#9776;</label>
           <input type="checkbox" id="hamburger" />
+          <div>
+            <img class="navbar-logo" src="../images/logo.png" />
+          </div>
           <ul>
-            <li><img class="navbar-logo" src="../images/logo.png" /></li>
-            <li><a class="navbar-link" href="../index.html">Home</a></li>
-            <li><a class="navbar-link" href="./about.html">About</a></li>
-            <li><a class="navbar-link" href="./products.html">Products</a></li>
             <li>
-              <a class="navbar-link" href="./testimonial.html">Testimonials</a>
+              <a class="navbar-link" href="../index.html">Home</a>
             </li>
-            <li><a class="navbar-link" href="./contact.html">Contact</a></li>
+            <li><a class="navbar-link" href="about.html">About</a></li>
+            <li>
+              <a class="navbar-link" href="products.html">Products</a>
+            </li>
+            <li>
+              <a class="navbar-link" href="testimonial.html">
+                Testimonials
+              </a>
+            </li>
+            <li>
+              <a class="navbar-link" href="contact.html">Contact</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -29,10 +39,27 @@
           <div class="main-row">
             <h1>Contact Us:</h1>
             <form id="contact-form">
-              <input id="fname" type="text" placeholder="First Name" />
-              <input id="lname" type="text" placeholder="Last Name" />
-              <input id="email" type="text" placeholder="Email" />
-              <textarea cols="50" rows="10"> </textarea>
+              <input
+                class="input"
+                id="fname"
+                type="text"
+                placeholder="First Name"
+              />
+              <input
+                class="input"
+                id="lname"
+                type="text"
+                placeholder="Last Name"
+              />
+              <input
+                class="input"
+                id="phone"
+                type="text"
+                placeholder="Phone Number"
+              />
+              <input class="input" id="email" type="text" placeholder="Email" />
+              <textarea class="input" placeholder="Message" cols="50" rows="10">
+              </textarea>
             </form>
           </div>
         </main>
