@@ -50,6 +50,8 @@
 }
 
 .navbar li {
+  border-left: solid 1px black;
+  padding: 10px;
 }
 
 .navbar-link {
@@ -68,7 +70,7 @@
 }
 
 .navbar-logo {
-  width: 10vw;
+  width: 120px;
   padding: 5px;
 }
 
@@ -107,11 +109,7 @@ ul {
   justify-content: space-evenly;
   list-style-type: none;
   margin: 0px;
-  padding: 00px;
-}
-
-li {
-  padding: 10px;
+  padding: 0px;
 }
 
 nav label,
@@ -155,7 +153,10 @@ nav label,
   }
 
   .navbar-logo {
-    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100px;
   }
 }
 
