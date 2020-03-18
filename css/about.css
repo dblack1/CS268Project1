@@ -33,6 +33,10 @@
   height: 100vh;
 }
 
+.test {
+  color: "blue";
+}
+
 main {
   padding-top: 10px;
   padding-bottom: 10px;
