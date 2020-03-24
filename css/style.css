@@ -127,6 +127,10 @@ nav label,
     align-items: flex-start;
   }
 
+  .motto {
+    font-size: 6vw;
+  }
+
   /* Show Hamburger */
   nav label {
     display: inline-block;
