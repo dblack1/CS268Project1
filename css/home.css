@@ -1,16 +1,19 @@
-.content {
+.landing-image {
   background-image: url(../images/plantation.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-grow: 1;
 }
 
-.header-main {
+.landing {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-}
-
-.home-main {
-  height: 100%;
 }
 
 .navbar {
@@ -21,6 +24,38 @@
   color: #3c9674;
 }
 
-footer {
-  background-color: white;
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 }
