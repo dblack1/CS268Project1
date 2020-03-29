@@ -17,6 +17,22 @@
   height: 100%;
 }
 
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-social a img {
+  padding: 10px;
+}
+
 .main-row {
   display: flex;
   flex-direction: column;
@@ -84,7 +100,13 @@ body {
 
 footer {
   width: 100%;
-  background-color: #3c9674;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 hr {
@@ -117,6 +139,12 @@ nav label,
 
   .motto {
     font-size: 6vw;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   /* Show Hamburger */

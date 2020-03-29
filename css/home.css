@@ -28,6 +28,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .service {
@@ -44,8 +46,27 @@
   align-items: baseline;
 }
 
+.message {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #0b3322;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
+  .message {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .message img {
+    width: 80%;
+  }
+
   .service {
     display: flex;
     flex-direction: column;
@@ -58,4 +79,8 @@
     width: 100%;
     align-items: center;
   }
+}
+
+footer {
+  background-color: white;
 }
