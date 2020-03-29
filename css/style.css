@@ -21,6 +21,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 35%;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #3c9674;
 }
 
 .footer-social {
@@ -100,7 +111,6 @@ body {
 
 footer {
   width: 100%;
-  background-color: gray;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -145,6 +155,12 @@ nav label,
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer-info {
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
 
   /* Show Hamburger */
