@@ -4,6 +4,10 @@
     <title>Black's Valley Ag</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/about.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -37,11 +41,21 @@
       <div class="content">
         <main>
           <div class="main-row">
-            <div class="images">
-              <img class="about-image" src="../images/seedplant.webp" />
-              <img class="about-image" src="../images/storage.webp" />
-              <img class="about-image" src="../images/storefront.webp" />
+            <div id="slideshow">
+              <div class="slide">
+                <img src="../images/seedplant.webp" />
+              </div>
+              <div class="slide">
+                <img src="../images/storage.webp" />
+              </div>
+              <div class="slide">
+                <img src="../images/storefront.webp" />
+              </div>
+
+              <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+              <a class="next" onclick="changeSlide(1)">&#10095;</a>
             </div>
+
             <p>
               Black's Valley Ag is a western Wisconsin family-owned business
               with a motto of "People working for People." We strive to provide
@@ -54,7 +68,6 @@
               backed by our certified and knowledgeable staff.
             </p>
           </div>
-          <h1 class="test">Hello</h1>
         </main>
       </div>
     </div>
@@ -92,5 +105,32 @@
         </a>
       </div>
     </footer>
+
+    <script>
+      let slide = 1;
+      displaySlides(slide);
+
+      function changeSlide(n) {
+        displaySlides((slide += n));
+      }
+
+      function displaySlides(slide) {
+        let slideshow = document.getElementsByClassName("slide");
+
+        console.log(slideshow);
+
+        if (slide > slideshow.length) {
+          slide = 1;
+        } else if (slide < 1) {
+          slide = slideshow.length;
+        }
+
+        for (i = 0; i < slideshow.length; i++) {
+          slideshow[i].style.display = "none";
+        }
+
+        slideshow[slide - 1].style.display = "block";
+      }
+    </script>
   </body>
 </html>

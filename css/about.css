@@ -33,8 +33,38 @@
   height: 100vh;
 }
 
-.test {
-  color: "blue";
+/*
+  Slideshow css
+*/
+
+#slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  width: auto;
+}
+
+.next {
+  right: 0px;
 }
 
 main {

@@ -24,7 +24,12 @@
   width: 35%;
 }
 
+.footer-info p {
+  font-family: "Varela", sans-serif;
+}
+
 .footer-links a {
+  font-family: "Varela", sans-serif;
   text-decoration: none;
   color: black;
 }
