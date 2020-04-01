@@ -35,6 +35,7 @@
 .services h1 {
   font-family: "Muli", sans-serif;
   font-size: 6vh;
+  margin-top: 0px;
 }
 
 .service {

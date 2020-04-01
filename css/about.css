@@ -21,7 +21,6 @@
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 60%;
   margin: auto;
   background-color: white;
   -webkit-box-shadow: 0px 4px 13px -4px #000000;
@@ -33,14 +32,28 @@
   height: 100vh;
 }
 
+#about-info {
+  width: 90%;
+  max-width: 800px;
+}
+
 /*
   Slideshow css
 */
 
 #slideshow {
-  max-width: 1000px;
+  width: 90%;
+  max-width: 800px;
   position: relative;
-  margin: auto;
+}
+
+#about-info h1 {
+  font-family: "Muli", sans-serif;
+}
+
+#about-info p {
+  font-family: "Jomolhari", serif;
+  font-size: 18px;
 }
 
 .slide {
@@ -51,20 +64,29 @@
   width: 100%;
 }
 
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  padding: 10px;
-  width: auto;
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
 }
 
-.next {
-  right: 0px;
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 main {
@@ -74,10 +96,6 @@ main {
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
-  .main-row {
-    width: 100%;
-  }
-
   main {
     padding-top: 0px;
     padding-bottom: 0px;

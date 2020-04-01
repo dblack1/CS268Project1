@@ -8,68 +8,90 @@
       href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="header-main">
-      <header>
-        <nav class="navbar">
-          <label for="hamburger">&#9776;</label>
-          <input type="checkbox" id="hamburger" />
-          <div>
-            <img class="navbar-logo" src="../images/logo.png" />
-          </div>
-          <ul>
-            <li>
-              <a class="navbar-link" href="../index.html">Home</a>
-            </li>
-            <li><a class="navbar-link" href="about.html">About</a></li>
-            <li>
-              <a class="navbar-link" href="products.html">Products</a>
-            </li>
-            <li>
-              <a class="navbar-link" href="testimonial.html">
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a class="navbar-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="content">
-        <main>
-          <div class="main-row">
-            <div id="slideshow">
-              <div class="slide">
-                <img src="../images/seedplant.webp" />
-              </div>
-              <div class="slide">
-                <img src="../images/storage.webp" />
-              </div>
-              <div class="slide">
-                <img src="../images/storefront.webp" />
-              </div>
-
-              <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-              <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    <header>
+      <nav class="navbar">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <div>
+          <img class="navbar-logo" src="../images/logo.png" />
+        </div>
+        <ul>
+          <li>
+            <a class="navbar-link" href="../index.html">Home</a>
+          </li>
+          <li><a class="navbar-link" href="about.html">About</a></li>
+          <li>
+            <a class="navbar-link" href="products.html">Products</a>
+          </li>
+          <li>
+            <a class="navbar-link" href="testimonial.html">
+              Testimonials
+            </a>
+          </li>
+          <li>
+            <a class="navbar-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <main>
+        <div class="main-row">
+          <div id="slideshow">
+            <div class="slide fade">
+              <img src="../images/test.jpg" />
             </div>
-
+            <div class="slide fade">
+              <img src="../images/test2.jpg" />
+            </div>
+            <div class="slide fade">
+              <img src="../images/test3.jpg" />
+            </div>
+            <div class="slide fade">
+              <img src="../images/test4.jpg" />
+            </div>
+          </div>
+          <div id="about-info">
+            <h1>Who are we?</h1>
             <p>
               Black's Valley Ag is a western Wisconsin family-owned business
               with a motto of "People working for People." We strive to provide
               the best agricultural, lawn and garden products and services to
               our customers. We believe this motto has allowed our business to
-              grow and better serve our customers. Since our inception in 1990,
-              we have grown to become not only an agriculture store, but also a
-              fertilizer distributor and bulk soybean distributor. We currently
-              offer a depth of expert services, products, and equipment - all
-              backed by our certified and knowledgeable staff.
+              grow and better serve our customers.
+            </p>
+            <h1>What can we do for you?</h1>
+            <p>
+              When Black's Valley Ag was first founded, our sales consisted of
+              feed, seed, and lawn and garden equipment. Over the years, we have
+              expanded our services to include Ag chemical sales and application
+              along with liquid fertilizer sales. We also have a bulk soybean
+              seed facility which allows us to sell, treat, and deliver soybean
+              seed in bulk.
+            </p>
+            <h1>Let us work for you</h1>
+            <p>
+              At Black's Valley Ag, our mission is to serve our customers in the
+              best way possible. The continuing education of our Certified Crop
+              Advisors allows us to meet various farm management needs, which
+              include developing Nutrient Management Plans(NMP) along with the
+              pairing of a trusted outside source to complete Comprehensive
+              Nutrient Management Plans(CNMP).
             </p>
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
     <footer>
       <img src="../images/logo.png" />
@@ -107,29 +129,24 @@
     </footer>
 
     <script>
-      let slide = 1;
-      displaySlides(slide);
+      let slide = 0;
+      displaySlides();
 
-      function changeSlide(n) {
-        displaySlides((slide += n));
-      }
-
-      function displaySlides(slide) {
+      function displaySlides() {
         let slideshow = document.getElementsByClassName("slide");
 
-        console.log(slideshow);
+        slide++;
 
         if (slide > slideshow.length) {
           slide = 1;
-        } else if (slide < 1) {
-          slide = slideshow.length;
         }
 
-        for (i = 0; i < slideshow.length; i++) {
+        for (let i = 0; i < slideshow.length; i++) {
           slideshow[i].style.display = "none";
         }
 
         slideshow[slide - 1].style.display = "block";
+        setTimeout(displaySlides, 5000);
       }
     </script>
   </body>
