@@ -1,18 +1,38 @@
-.product {
+#corn-dealers {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 90%;
 }
 
-.product-description {
+.corn-dealer {
+  padding: 5px;
+  transition: transform 0.3s;
+}
+
+.corn-dealer:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+#dealers-section1 {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  justify-content: space-evenly;
 }
 
-.product-description > h3 {
-  margin: 0px;
+#dealers-section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#dealers-section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .main-row {
@@ -30,6 +50,21 @@
   padding-top: 10px;
 }
 
+.products-heading {
+  justify-content: flex-start;
+  font-family: "Muli", sans-serif;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.products-text {
+  font-family: "Jomolhari", serif;
+  font-size: 18px;
+  width: 90%;
+}
+
 main {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -38,6 +73,10 @@ main {
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
+  .corn-dealer {
+    width: 95%;
+  }
+
   .main-row {
     width: 100%;
   }
