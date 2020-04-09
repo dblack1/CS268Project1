@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@800&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
@@ -42,7 +46,7 @@
         <main>
           <div class="main-row">
             <div id="contact-form">
-              <h1>Contact Us:</h1>
+              <h1 id="contact-title">We want to hear from you!</h1>
               <input
                 class="input"
                 id="fname"
@@ -64,6 +68,7 @@
               <input class="input" id="email" type="text" placeholder="Email" />
               <textarea
                 class="input"
+                id="message"
                 placeholder="Message"
                 cols="50"
                 rows="10"
@@ -108,5 +113,29 @@
         </a>
       </div>
     </footer>
+    <script>
+      document
+        .getElementById("submit-button")
+        .addEventListener("click", displayMessage);
+
+      function displayMessage() {
+        const fname = document.getElementById("fname").value;
+        const lname = document.getElementById("lname").value;
+        const phone = document.getElementById("phone").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        alert(
+          "Thank you " +
+            fname +
+            " " +
+            lname +
+            ". We will reach out as soon as possible to you at " +
+            phone +
+            " or " +
+            email
+        );
+      }
+    </script>
   </body>
 </html>
