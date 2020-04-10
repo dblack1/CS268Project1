@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Black's Valley Ag</title>
+    <title>About - Black's Valley Ag</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/about.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/smalllogo.webp"
+      type="image/x-icon"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
       rel="stylesheet"
@@ -17,6 +22,7 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../js/slideshow.js" defer></script>
   </head>
   <body>
     <header>
@@ -24,7 +30,13 @@
         <label for="hamburger">&#9776;</label>
         <input type="checkbox" id="hamburger" />
         <div>
-          <img class="navbar-logo" src="../images/logo.png" />
+          <a href="../index.html">
+            <img
+              class="navbar-logo"
+              src="../images/logo.png"
+              alt="Black's Valley Ag Logo"
+            />
+          </a>
         </div>
         <ul>
           <li>
@@ -50,16 +62,22 @@
         <div class="main-row">
           <div id="slideshow">
             <div class="slide fade">
-              <img src="../images/test.jpg" />
+              <img src="../images/forklift.jpg" alt="Worker on a forklift" />
             </div>
             <div class="slide fade">
-              <img src="../images/test2.jpg" />
+              <img src="../images/truck.jpg" alt="Black's Valley Ag Truck" />
             </div>
             <div class="slide fade">
-              <img src="../images/test3.jpg" />
+              <img
+                src="../images/insidestore.jpg"
+                alt="Inside of Black's Valley Ag"
+              />
             </div>
             <div class="slide fade">
-              <img src="../images/test4.jpg" />
+              <img
+                src="../images/frontdesk.jpg"
+                alt="Black's Valley Ag front desk"
+              />
             </div>
           </div>
           <div id="about-info">
@@ -94,7 +112,9 @@
       </main>
     </div>
     <footer>
-      <img src="../images/logo.png" />
+      <a href="../index.html">
+        <img src="../images/logo.png" alt="Black's Valley Ag Logo" />
+      </a>
       <div class="footer-info">
         <div class="footer-links">
           <a href="index.html">Home</a>
@@ -113,41 +133,25 @@
         </p>
       </div>
       <div class="footer-social">
-        <a href="https://www.facebook.com/blacksvalleyag/">
-          <img src="../images/facebook.png" />
+        <a href="https://www.facebook.com/blacksvalleyag/" target="_blank">
+          <img src="../images/facebook.png" alt="Facebook icon" />
         </a>
-        <a href="https://www.instagram.com/blacksvalleyag/?hl=en">
-          <img src="../images/instagram.png" />
+        <a
+          href="https://www.instagram.com/blacksvalleyag/?hl=en"
+          target="_blank"
+        >
+          <img src="../images/instagram.png" alt="Instagram icon" />
         </a>
-        <a href="https://www.linkedin.com/company/blacks-valley-ag-supply-inc">
-          <img src="../images/linkedin.png" />
+        <a
+          href="https://www.linkedin.com/company/blacks-valley-ag-supply-inc"
+          target="_blank"
+        >
+          <img src="../images/linkedin.png" alt="Linkedin icon" />
         </a>
-        <a href="https://twitter.com/BlacksValleyAg">
-          <img src="../images/twitter.png" />
+        <a href="https://twitter.com/BlacksValleyAg" target="_blank">
+          <img src="../images/twitter.png" alt="Twitter icon" />
         </a>
       </div>
     </footer>
-
-    <script>
-      let slide = 0;
-      displaySlides();
-
-      function displaySlides() {
-        let slideshow = document.getElementsByClassName("slide");
-
-        slide++;
-
-        if (slide > slideshow.length) {
-          slide = 1;
-        }
-
-        for (let i = 0; i < slideshow.length; i++) {
-          slideshow[i].style.display = "none";
-        }
-
-        slideshow[slide - 1].style.display = "block";
-        setTimeout(displaySlides, 5000);
-      }
-    </script>
   </body>
 </html>

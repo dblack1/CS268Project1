@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Black's Valley Ag</title>
+    <title>Contact - Black's Valley Ag</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/contact.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/smalllogo.webp"
+      type="image/x-icon"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
       rel="stylesheet"
@@ -13,6 +18,7 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script src="../js/contact.js" defer></script>
   </head>
   <body>
     <div class="header-main">
@@ -21,7 +27,13 @@
           <label for="hamburger">&#9776;</label>
           <input type="checkbox" id="hamburger" />
           <div>
-            <img class="navbar-logo" src="../images/logo.png" />
+            <a href="../index.html">
+              <img
+                class="navbar-logo"
+                src="../images/logo.png"
+                alt="Black's Valley Ag Logo"
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -80,7 +92,9 @@
       </div>
     </div>
     <footer>
-      <img src="../images/logo.png" />
+      <a href="../index.html">
+        <img src="../images/logo.png" alt="Black's Valley Ag Logo" />
+      </a>
       <div class="footer-info">
         <div class="footer-links">
           <a href="index.html">Home</a>
@@ -99,43 +113,25 @@
         </p>
       </div>
       <div class="footer-social">
-        <a href="https://www.facebook.com/blacksvalleyag/">
-          <img src="../images/facebook.png" />
+        <a href="https://www.facebook.com/blacksvalleyag/" target="_blank">
+          <img src="../images/facebook.png" alt="Facebook icon" />
         </a>
-        <a href="https://www.instagram.com/blacksvalleyag/?hl=en">
-          <img src="../images/instagram.png" />
+        <a
+          href="https://www.instagram.com/blacksvalleyag/?hl=en"
+          target="_blank"
+        >
+          <img src="../images/instagram.png" alt="Instagram icon" />
         </a>
-        <a href="https://www.linkedin.com/company/blacks-valley-ag-supply-inc">
-          <img src="../images/linkedin.png" />
+        <a
+          href="https://www.linkedin.com/company/blacks-valley-ag-supply-inc"
+          target="_blank"
+        >
+          <img src="../images/linkedin.png" alt="Linkedin icon" />
         </a>
-        <a href="https://twitter.com/BlacksValleyAg">
-          <img src="../images/twitter.png" />
+        <a href="https://twitter.com/BlacksValleyAg" target="_blank">
+          <img src="../images/twitter.png" alt="Twitter icon" />
         </a>
       </div>
     </footer>
-    <script>
-      document
-        .getElementById("submit-button")
-        .addEventListener("click", displayMessage);
-
-      function displayMessage() {
-        const fname = document.getElementById("fname").value;
-        const lname = document.getElementById("lname").value;
-        const phone = document.getElementById("phone").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-
-        alert(
-          "Thank you " +
-            fname +
-            " " +
-            lname +
-            ". We will reach out as soon as possible to you at " +
-            phone +
-            " or " +
-            email
-        );
-      }
-    </script>
   </body>
 </html>
