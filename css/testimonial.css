@@ -1,7 +1,3 @@
-.content {
-  background-color: white;
-}
-
 .testimonial {
   display: flex;
   flex-direction: row;
@@ -15,7 +11,7 @@
   flex-direction: row-reverse;
 }
 
-.testimonial-main {
+.main-row {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +55,7 @@ main {
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
-  .testimonial-main {
+  .main-row {
     width: 100%;
   }
 
@@ -83,7 +79,6 @@ main {
 
   .testimonial-image {
     margin: auto;
-    width: 40%;
   }
 
   main {
