@@ -1,22 +1,23 @@
-.button {
+#button {
   background-color: rgb(74, 73, 73, 0.9);
   color: white;
   padding: 20px;
   border: 2px solid white;
   border-radius: 10%;
-  text-transform: uppercase;
+  font-family: "Varela", sans-serif;
+  font-size: 18px;
   text-decoration: none;
   margin-left: 10px;
   transition: transform 0.3s;
 }
 
-.button:hover {
+#button:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
 }
 
-.landing-image {
+#landing-image {
   background-image: url(../images/plantation.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -28,10 +29,36 @@
   flex-grow: 1;
 }
 
-.landing {
+#services {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#services h1 {
+  font-family: "Muli", sans-serif;
+  font-size: 6vh;
+  margin-top: 0px;
+}
+
+#service-menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+#message {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #0b3322;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .navbar {
@@ -40,20 +67,6 @@
 
 .navbar-link {
   color: #3c9674;
-}
-
-.services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.services h1 {
-  font-family: "Muli", sans-serif;
-  font-size: 6vh;
-  margin-top: 0px;
 }
 
 .service {
@@ -66,45 +79,43 @@
   font-family: "Varela", sans-serif;
 }
 
-.service-menu {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-around;
-  align-items: baseline;
-}
-
-.message {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #0b3322;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.motto {
+  margin: 0px;
+  margin-left: 10px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 4vw;
+  letter-spacing: 4px;
+  color: white;
 }
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
-  .message {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .message img {
-    width: 80%;
-  }
-
-  .service {
+  #message {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .service-menu {
+  #message img {
+    margin: 10px;
+    width: 90%;
+  }
+
+  #service-menu {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
+  }
+
+  .motto {
+    font-size: 7vw;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 }
