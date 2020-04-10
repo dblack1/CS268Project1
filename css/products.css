@@ -1,4 +1,4 @@
-#corn-dealers {
+#vendors {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -6,30 +6,7 @@
   width: 90%;
 }
 
-.corn-dealer {
-  padding: 5px;
-  transition: transform 0.3s;
-}
-
-.corn-dealer:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
-}
-
-#dealers-section1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-#dealers-section2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-#dealers-section3 {
+.vendor-section {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -39,6 +16,17 @@
   display: flex;
   flex-direction: row;
   width: 90%;
+}
+
+.vendor {
+  padding: 5px;
+  transition: transform 0.3s;
+}
+
+.vendor:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 .main-row {
@@ -75,7 +63,7 @@ main {
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
-  .corn-dealer {
+  .vendor {
     width: 95%;
   }
 
