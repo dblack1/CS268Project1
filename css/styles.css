@@ -38,6 +38,12 @@
   padding: 10px;
 }
 
+.fullscreen-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .main-row {
   display: flex;
   flex-direction: column;
