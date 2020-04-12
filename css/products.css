@@ -46,3 +46,9 @@
     width: 95%;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .main-row {
+    width: 100%;
+  }
+}
