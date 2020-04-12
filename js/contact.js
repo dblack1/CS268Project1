@@ -1,14 +1,21 @@
-document
-  .getElementById("submit-button")
-  .addEventListener("click", displayMessage);
+let button = document.getElementById("submit-button");
+let fnameInput = document.getElementById("fname");
+let lnameInput = document.getElementById("lname");
+let phoneInput = document.getElementById("phone");
+let emailInput = document.getElementById("email");
+let messageInput = document.getElementById("message");
+
+button.addEventListener("click", displayMessage);
+fnameInput.addEventListener("input", checkDisable);
+lnameInput.addEventListener("input", checkDisable);
+phoneInput.addEventListener("input", checkDisable);
+emailInput.addEventListener("input", checkDisable);
+messageInput.addEventListener("input", checkDisable);
+
+let fname, lname, phone, email, message;
 
 function displayMessage() {
-  const fname = document.getElementById("fname").value;
-  const lname = document.getElementById("lname").value;
-  const phone = document.getElementById("phone").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
+  setValues();
   alert(
     "Thank you " +
       fname +
@@ -19,4 +26,21 @@ function displayMessage() {
       " or " +
       email
   );
+}
+
+function checkDisable() {
+  setValues();
+  if (fname && lname && phone && email && message) {
+    button.disabled = false;
+  } else {
+    button.disabled = true;
+  }
+}
+
+function setValues() {
+  fname = fnameInput.value;
+  lname = lnameInput.value;
+  phone = phoneInput.value;
+  email = emailInput.value;
+  message = messageInput.value;
 }
